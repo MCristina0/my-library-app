@@ -12,14 +12,57 @@ const libro3 = new libro ("pricipes","antoine de saint","fitcion","español","89
 
 const pedido1 = new pedido ("07-08-2024",3105399262,"casa azul","principito")
 
+function menu() {
+    
+    let  eleccion= "1"
+    
+    console.log (eleccion)
+   
+   
+           switch(eleccion) {
+               case '1': 
+               librerias.addLibro(libro3)
+            
+                break;
+                case '2': 
+                librerias.removelibro()
+             
+                break;
+                case '3': 
+                librerias.listarlibros()
+             
+                break;
+                case '4': 
+            
+                librerias.flitrarLibro("pricipitos")
+             
+                break;
+                case '5': 
+    
+                librerias.ordenarLibros()
+             
+                break; 
+                
+                case '6': 
+        
+                librerias.addPedido(pedido1)
+             
+                break; 
+
+               case '7':
+           
+                  console.log("termino la consulta")
+                   break;
+                 
+               default:
+                   console.log('Opción inválida, por favor elige de nuevo.');
+                 
+           };
+       }
+   
+ menu() 
+      
+
 librerias.addLibro(libro1)
 librerias.addLibro(libro2)
-librerias.addLibro(libro3)
-librerias.flitrarLibro("pricipitos")
-librerias.removelibro()
-librerias.ordenarLibros()
-librerias.addPedido(pedido1)
 
-
-
-librerias.listarlibros()
